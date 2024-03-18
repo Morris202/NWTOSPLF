@@ -1,4 +1,4 @@
-
+#! /bin/bash
 IPT="/sbin/iptables"
 
 # Flush und Löschen der Custom-Chains

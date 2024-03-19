@@ -41,6 +41,8 @@ sudo sysctl -p
 
 sudo curl https://raw.githubusercontent.com/Morris202/NWTOSPLF/main/ipt.sh | sudo bash
 
+sudo systemctl hostname LinTichyS2
+
 # Netplan anwenden
 sudo netplan apply
 

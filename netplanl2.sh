@@ -35,6 +35,10 @@ network:
       set-name: outside
 EOF
 
+sudo sysctl -w net.ipv4.ip_forward=1
+sudo sysctl -w net.ipv6.conf.all.forwarding=1
+sudo sysctl -p
+
 # Netplan anwenden
 sudo netplan apply
 

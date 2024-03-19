@@ -39,6 +39,8 @@ sudo sysctl -w net.ipv4.ip_forward=1
 sudo sysctl -w net.ipv6.conf.all.forwarding=1
 sudo sysctl -p
 
+sudo curl https://raw.githubusercontent.com/Morris202/NWTOSPLF/main/ipt.sh | sudo bash
+
 # Netplan anwenden
 sudo netplan apply
 

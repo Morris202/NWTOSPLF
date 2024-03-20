@@ -1,6 +1,11 @@
 #!/bin/bash
 
+if [ "$#" -ne 2 ]; then
+    echo "Verwendung: $0 <DMZ_MAC> <OUTSIDE_MAC>"
+    exit 1
+    
 sudo hostnamectl set-hostname LinTichyC1
+
 
 cat <<EOF | sudo tee /etc/netplan/00-installer-config.yaml > /dev/null
 network:

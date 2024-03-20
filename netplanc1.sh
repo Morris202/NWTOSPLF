@@ -3,7 +3,7 @@
 if [ "$#" -ne 2 ]; then
     echo "Verwendung: $0 <DMZ_MAC> <OUTSIDE_MAC>"
     exit 1
-fi 
+fi
  
 sudo hostnamectl set-hostname LinTichyC1
 
